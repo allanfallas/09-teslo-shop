@@ -2,7 +2,7 @@ import { SlicePipe } from '@angular/common';
 import { Component, input, computed } from '@angular/core';
 import { RouterLink } from "@angular/router";
 import { Product } from '@products/interfaces/product.interface';
-import { environment } from 'src/environments/environment.development';
+import { environment } from 'src/environments/environment';
 import { ProductImagePipe } from "../../pipes/product-image.pipe";
 
 @Component({
