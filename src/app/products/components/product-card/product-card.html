@@ -1,0 +1,14 @@
+<div class="card bg-base-100 shadow-sm animate-fadeIn">
+  <figure>
+    <img
+      src="{{product().images | productImage}}"
+      alt="Shoes" />
+  </figure>
+  <div class="card-body">
+    <a [routerLink]="['/product', product().slug]"><h2 class="card-title">{{product().title}}</h2></a>
+    <p>{{product().description | slice: 0 : 70}}</p>
+    <div class="card-actions justify-end">
+      <a [routerLink]="['/product', product().slug]"><button class="btn btn-primary">View Now</button></a>
+    </div>
+  </div>
+</div>
